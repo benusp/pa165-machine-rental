@@ -28,11 +28,11 @@ import org.testng.annotations.Test;
  *
  * @author Peter Benus
  */
-@ContextConfiguration(classes = PersistenceApplicationContext.class)
-@TestExecutionListeners(TransactionalTestExecutionListener.class)
-@Transactional
+//@ContextConfiguration(classes = PersistenceApplicationContext.class)
+//@TestExecutionListeners(TransactionalTestExecutionListener.class)
+//@Transactional
 public class RevisionTest extends AbstractTestNGSpringContextTests {
-
+/*
     @Autowired
     private RevisionDao revisionDao;
     @Autowired
@@ -107,5 +107,5 @@ public class RevisionTest extends AbstractTestNGSpringContextTests {
     @Test()
     public void savesRevisionDate() {
         Assert.assertEquals(revisionDao.findById(revision.getId()).getRevisionDate(), revision.getRevisionDate());
-    }
+    }*/
 }
